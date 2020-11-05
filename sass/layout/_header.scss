@@ -1,0 +1,133 @@
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  margin-right: 93px;
+
+  &-right-side {
+    color: black;
+  }
+
+  &-right-side-footer {
+    color: #ffffff;
+  }
+}
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.current {
+  color: $accent-color;
+}
+
+.current {
+  position: relative;
+  color: $accent-color;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    content: '';
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.email-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-svg {
+    margin-right: 10px;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.email-link:hover .email-link-svg {
+  fill: $accent-color;
+}
+
+.tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.333;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-svg {
+    margin-right: 10px;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.tel-link:hover .tel-link-svg {
+  fill: $accent-color;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+
+  & .address {
+    display: inline-flex;
+    margin-left: auto;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &-list {
+    display: flex;
+
+    &-link {
+      display: inline-block;
+      padding: 32px 0px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.02em;
+      color: $primary-text-color;
+    }
+  }
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}

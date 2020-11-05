@@ -1,0 +1,166 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #212121;
+
+  &-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+  }
+
+  &-list {
+    padding-right: 70px;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+
+  &-email {
+  margin-bottom: 9px;
+
+  &-link {
+  color: $text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+&-tel-link {
+  color: $text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+}
+
+
+
+
+.city-adress {
+  margin-bottom: 9px;
+  color: $text-color;
+}
+
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .&-text {
+  margin-bottom: 20px;
+  width: 146.41px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+ &-svg {
+  fill: $text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&:hover,
+&:focus {
+  background-color: $accent-color;
+}
+&:hover .footer-links-svg,
+&:focus .footer-links-svg {
+  background-color: $accent-color;
+}
+}
+
+
+.footer-social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-subsribe-form {
+  display: inline-block;
+  margin-left: 93px;
+}
+.footer-form {
+  position: relative;
+}
+
+.subsribe-text {
+  width: 219px;
+  height: 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-input {
+  display: inline-block;
+
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-submit-btn {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.875;
+  margin-left: 12px;
+
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #212121;
+
+  &:hover {
+    background-color: $accent-color;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  &-svg {
+  width: 24px;
+  height: 24px;
+
+}
+

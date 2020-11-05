@@ -1,0 +1,117 @@
+.portfolio-hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &-item {
+    margin-right: 8px;
+  }
+}
+
+.portfolio-discription-list {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.modal-btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 128px;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  color: var(--primary-text-color);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-card-discription {
+  padding: 20px 23px;
+}
+
+.discription-name {
+  margin-bottom: 4px;
+  width: 322px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.discription-direction {
+  width: 322px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.portfolio-discription-list:hover .overlay-description {
+  transform: translateY(0%);
+}
+
+.portfolio-discription-list {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+
+  &-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    padding: 63px 23px;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+
