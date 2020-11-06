@@ -1,15 +1,49 @@
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-  .header & {
-    display: flex;
-    align-self: center;
-  }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
 
-  .footer & {
-    display: flex;
-    align-items: baseline;
+    .footer & {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+
+    .hero & {
+      width: 1600px;
+      height: 600px;
+    }
+  }
+}
+
+// .hero & {
+//   width: 1600px;
+//   height: 600px;
+// }
+
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+
+// .footer & {
+//   display: flex;
+//   align-items: baseline;
+// }
