@@ -1,6 +1,8 @@
 .header .container {
-  display: flex;
-  align-self: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-self: center;
+  }
 }
 
 .logo {
@@ -10,7 +12,10 @@
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: $accent-color;
-  margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &-right-side {
     color: black;
@@ -20,36 +25,83 @@
     color: #ffffff;
   }
 }
+.logo-menu-wrap {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
 
 .menu-btn {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
+  outline: none;
   background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.current {
-  color: $accent-color;
+.icon-close-btn {
+  display: none;
+
+  .menu-btn.is-open & {
+    display: block;
+  }
+}
+
+.icon-menu-btn {
+  display: block;
+  .menu-btn.is-open & {
+    display: none;
+  }
+}
+
+.menu-btn-svg:hover,
+.menu-btn-svg:focus {
+  fill: $accent-color;
 }
 
 .current {
   position: relative;
   color: $accent-color;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 12px;
+  }
 
   &::after {
     position: absolute;
-    left: 0;
-    bottom: -1px;
+    left: 50%;
+    bottom: 0px;
     display: inline-block;
-    width: 100%;
+    width: 61px;
     height: 4px;
     content: '';
     background-color: $accent-color;
     border-radius: 2px;
+
+    @media screen and (min-width: 480px) {
+      transform: translateX(-50%);
+    }
+    @media screen and (min-width: 768px) {
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+
+      @media screen and (min-width: 1200px) {
+        width: 100%;
+        height: 4px;
+      }
+    }
   }
 }
 
@@ -98,24 +150,49 @@
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 
   & .address {
-    display: inline-flex;
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      margin-left: auto;
+    }
+  }
+}
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200p) {
+    display: flex;
+    align-items: center;
+  }
 
   &-list-item:not(:last-child) {
-    margin-right: 50px;
   }
-  &-list {
-    display: flex;
 
+  &-list {
     &-link {
       display: inline-block;
       padding: 32px 0px;
@@ -129,8 +206,10 @@
 }
 
 .address-list {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200p) {
+    display: flex;
+    align-items: center;
+  }
 
   &-item:not(:last-child) {
     margin-right: 50px;
