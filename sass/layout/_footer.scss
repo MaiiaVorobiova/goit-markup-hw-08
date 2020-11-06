@@ -22,33 +22,28 @@
   }
 
   &-email {
-  margin-bottom: 9px;
+    margin-bottom: 9px;
 
-  &-link {
-  color: $text-color;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &-link {
+      color: $text-color;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &-tel-link {
+    color: $text-color;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-}
-
-&-tel-link {
-  color: $text-color;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-}
-
-
-
 
 .city-adress {
   margin-bottom: 9px;
   color: $text-color;
 }
-
 
 .footer-social-list {
   display: flex;
@@ -56,8 +51,6 @@
   justify-content: center;
   border-radius: 50%;
 }
-
-
 
 .footer-links {
   display: flex;
@@ -71,32 +64,31 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .&-text {
-  margin-bottom: 20px;
-  width: 146.41px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+  &-text {
+    margin-bottom: 20px;
+    width: 146.41px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &-svg {
+    fill: $text-color;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &:hover .footer-links-svg,
+  &:focus .footer-links-svg {
+    background-color: $accent-color;
+  }
 }
- &-svg {
-  fill: $text-color;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-&:hover,
-&:focus {
-  background-color: $accent-color;
-}
-&:hover .footer-links-svg,
-&:focus .footer-links-svg {
-  background-color: $accent-color;
-}
-}
-
 
 .footer-social-links-item:not(:last-child) {
   margin-right: 10px;
@@ -159,8 +151,7 @@
     cursor: pointer;
   }
   &-svg {
-  width: 24px;
-  height: 24px;
-
+    width: 24px;
+    height: 24px;
+  }
 }
-

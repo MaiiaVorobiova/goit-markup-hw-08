@@ -15,19 +15,20 @@
   display: block;
 }
 
-media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   &-list {
-  display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
 }
-media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   &-list {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-}
 &-list-item {
   display: flex;
   flex-direction: column;
