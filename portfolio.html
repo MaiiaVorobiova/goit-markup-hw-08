@@ -18,13 +18,18 @@
     <!--HEADER-->
     <header class="header">
       <div class="container">
+        <div class="logo-menu-wrap"><a class="logo link" href="./index.html" aria-label="логотип вебстудии">Web<span class="logo-right-side">Studio</span>
+        </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="menu-btn-svg" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu-btn" href="./images/sprite.svg#icon-menu"></use>
+          <use class="icon-close-btn" href="./images/sprite.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="menu-container" id="menu-container" data-menu>
         <nav class="navigation">
-          <a
-            class="logo link"
-            href="./index.html"
-            aria-label="логотип вебстудии"
-            >Web<span class="logo-right-side">Studio</span>
-          </a>
+         
           <ul class="navigation-list list">
             <li class="navigation-list-item">
               <a class="navigation-list-link link" href="./index.html"
@@ -45,7 +50,7 @@
         </nav>
         <address class="address">
           <ul class="address-list link list">
-            <li class="adress-list-item">
+            <li class="address-list-item">
               <a class="email-link link" href="mailto:info@devstudio.com">
                 <svg class="email-link-svg" width="16" height="12">
                   <use href="./images/sprite.svg#icon-envelope-hover"></use>
@@ -53,7 +58,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="adress-list-item">
+            <li class="address-list-item">
               <a class="tel-link link" href="tel:+380961111111">
                 <svg class="tel-link-svg" width="10" height="16">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -63,6 +68,7 @@
             </li>
           </ul>
         </address>
+        </div>
       </div>
     </header>
     <main>
@@ -96,7 +102,21 @@
           <ul class="portfolio-item list">
             <li class="portfolio-discription-list">
               <div class="overlay">
-                <img src="./images/portfolio/img1.jpg" alt="технокряк" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="./images/portfolio/portfolio1.webp 1px, ./images/portfolio/portfolio1@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio1.jpg 1x, ./images/portfolio/portfolio1@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio1-t.webp 1x, ./images/portfolio/portfolio1-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio1-t.jpg 1x, ./images/portfolio/portfolio1-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                      srcset="./images/portfolio/portfolio1-m.webp 1x, ./images/portfolio/portfolio1-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                      srcset="./images/portfolio/portfolio1-m.jpg 1x, ./images/portfolio/portfolio1-m@2x.jpg 2x">
+                      <img src="./images/portfolio/portfolio1-m.jpg" alt="технокряк" />
+                </picture>
                 <p class="overlay-description">Технокряк это современная площадка распространения коронавируса.
                   Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -109,7 +129,23 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img2.jpg" alt="постер" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio2.webp 1x, ./images/portfolio/portfolio2@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio2.jpg 1x, ./images/portfolio/portfolio2@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio2-t.webp 1x, ./images/portfolio/portfolio2-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio2-t.jpg 1x, ./images/portfolio/portfolio2-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio2-m.webp 1x, ./images/portfolio/portfolio2-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio2-m.jpg 1x, ./images/portfolio/portfolio2-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio2-m.jpg" alt="постер" />
+                  
+                </picture>
+            
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -119,7 +155,23 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img3.jpg" alt="логотип ресторана" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio3.webp 1x, ./images/portfolio/portfolio3@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio3.jpg 1x, ./images/portfolio/portfolio3@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio3-t.webp 1x, ./images/portfolio/portfolio3-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio3-t.jpg 1x, ./images/portfolio/portfolio3-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio3-m.webp 1x, ./images/portfolio/portfolio3-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio3-m.jpg 1x, ./images/portfolio/portfolio3-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio3-m.jpg" alt="логотип ресторана" />
+                 
+                </picture>
+              
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -129,7 +181,22 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img4.jpg" alt="наушники" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio4.webp 1x, ./images/portfolio/portfolio4@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio4.jpg 1x, ./images/portfolio/portfolio4@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio4-t.webp 1x, ./images/portfolio/portfolio4-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio4-t.jpg 1x, ./images/portfolio/portfolio4-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio4-m.webp 1x, ./images/portfolio/portfolio4-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio4-m.jpg 1x, ./images/portfolio/portfolio4-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio4-m.jpg" alt="наушники" />
+                </picture>
+              
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -139,7 +206,22 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img5.jpg" alt="коробки" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio5.webp 1x, ./images/portfolio/portfolio5@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio5.jpg 1x, ./images/portfolio/portfolio5@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio5-t.webp 1x, ./images/portfolio/portfolio5-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio5-t.jpg 1x, ./images/portfolio/portfolio5-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio5-m.webp 1x, ./images/portfolio/portfolio5-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio1-m.jpg 1x, ./images/portfolio/portfolio5-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio5-m.jpg" alt="коробки" />
+                </picture>
+            
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -149,7 +231,22 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img6.jpg" alt="монитор" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio6.webp 1x, ./images/portfolio/portfolio6@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio6.jpg 1x, ./images/portfolio/portfolio6@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio6-t.webp 1x, ./images/portfolio/portfolio6-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio6-t.jpg 1x, ./images/portfolio/portfolio6-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio6-m.webp 1x, ./images/portfolio/portfolio6-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio6-m.jpg 1x, ./images/portfolio/portfolio6-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio6-m.jpg" alt="монитор" />
+                </picture>
+             
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -159,7 +256,22 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img7.jpg" alt="книга" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio7.webp 1x, ./images/portfolio/portfolio7@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio7.jpg 1x, ./images/portfolio/portfolio7@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio7-t.webp 1x, ./images/portfolio/portfolio7-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio7-t.jpg 1x, ./images/portfolio/portfolio7-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio7-m.webp 1x, ./images/portfolio/portfolio7-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio7-m.jpg 1x, ./images/portfolio/portfolio7-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio7-m.jpg" alt="книга" />
+                </picture>
+              
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -169,7 +281,22 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img8.jpg" alt="бирка с надписью" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio8.webp 1x, ./images/portfolio/portfolio8@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio8.jpg 1x, ./images/portfolio/portfolio8@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio8-t.webp 1x, ./images/portfolio/portfolio8-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio8-t.jpg 1x, ./images/portfolio/portfolio8-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio8-m.webp 1x, ./images/portfolio/portfolio8-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio8-m.jpg 1x, ./images/portfolio/portfolio8-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio8-m.jpg" alt="бирка с надписью" />
+                </picture>
+            
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -179,7 +306,22 @@
             </li>
             <li class="portfolio-discription-list">
               <div class="overlay">
-              <img src="./images/portfolio/img9.jpg" alt="руки на клавиатуре" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio9.webp 1x, ./images/portfolio/portfolio9@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/portfolio9.jpg 1x, ./images/portfolio/portfolio9@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio9-t.webp 1x, ./images/portfolio/portfolio9-t@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio9-t.jpg 1x, ./images/portfolio/portfolio9-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio9-m.webp 1x, ./images/portfolio/portfolio9-m@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio9-m.jpg 1x, ./images/portfolio/portfolio9-m@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio9-m.jpg" alt="руки на клавиатуре" />
+                </picture>
+              
               <p class="overlay-description">dreams come true</p>
               </div>
               <div class="portfolio-card-discription">
@@ -194,6 +336,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container">
+        <div class="footer-adress-wrap">
         <div class="footer-container">
           <a
             class="footer-logo link"
@@ -250,9 +393,11 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subsribe-form">
+        </div>
+        <form class="footer-form">
           <h2 class="subsribe-text">Подпишитесь на рассылку</h2>
-          <form class="footer-form">
+          
+            <div class="footer-subsribe-form">
             <label for="mail" class="footer-form-label"></label>
             <input type="mail" class="footer-input" placeholder="E-mail" id="mail" />
             <button type="submit" class="footer-submit-btn">Подписаться
@@ -260,9 +405,9 @@
                 <use href="./images/sprite.svg#icon-icon-send"></use>
               </svg>
         </button>
+        </div>
           </form>
         </div>
-      </div>
     </footer>
     <script src="./js/menu.js"></script>
   </body>

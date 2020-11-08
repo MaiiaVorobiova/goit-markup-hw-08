@@ -1,15 +1,34 @@
 .portfolio-hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .buttons-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
   &-item {
     margin-right: 8px;
+  }
+  &-item:nth-last-child(-n + 3) {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -41,6 +60,7 @@
   height: 38px;
   background: #f5f4fa;
   border-radius: 4px;
+  border-color: transparent;
   color: var(--primary-text-color);
   transition-property: all;
   transition-duration: 250ms;
@@ -54,9 +74,21 @@
 }
 
 .portfolio-item {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    margin: -15px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-card-discription {
@@ -113,5 +145,3 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
-

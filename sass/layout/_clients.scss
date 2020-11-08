@@ -14,18 +14,14 @@
       flex-wrap: nowrap;
     }
 
-    &-item:not(:first-child) {
-      @media screen and (min-width: 1200px) {
-        margin-left: 30px;
-      }
-    }
+    // &-item:not(:first-child) {
+    //   @media screen and (min-width: 1200px) {
+    //     margin-left: 30px;
+    //   }
+    // }
   }
 
   &-logo-link {
-    @media screen and (min-width: 480px) {
-      width: 210px;
-    }
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +33,13 @@
     color: $icons-links-color;
     transition-property: all;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
 
     &:hover,
     &:focus {
