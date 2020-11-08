@@ -614,10 +614,15 @@ img {
 }
 
 .footer-list {
-  padding-right: 70px;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    padding-right: 70px;
+  }
 }
 
 .footer-email {
@@ -636,6 +641,12 @@ img {
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .footer-adress-wrap {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -692,13 +703,18 @@ img {
 
 .footer-links-text {
   margin-bottom: 20px;
-  width: 146.41px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-links-text {
+    width: 146.41px;
+  }
 }
 
 .footer-links-svg {
@@ -736,7 +752,6 @@ img {
 }
 
 .subsribe-text {
-  width: 219px;
   height: 16px;
   margin-bottom: 20px;
   font-size: 14px;
@@ -744,6 +759,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .subsribe-text {
+    width: 219px;
+  }
 }
 
 .footer-input {
@@ -775,7 +796,6 @@ img {
     font-size: 16px;
     line-height: 1.875;
     margin-left: 12px;
-    margin-left: 140px;
     letter-spacing: 0.06em;
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.3);
