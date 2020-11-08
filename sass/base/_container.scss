@@ -8,11 +8,6 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-
-    .footer & {
-      display: flex;
-      align-items: baseline;
-    }
   }
 }
 
@@ -27,9 +22,17 @@
     width: 1200px;
 
     .hero & {
-      width: 1600px;
-      height: 600px;
+      @media screen and (min-width: 1200px) {
+        width: 1600px;
+        height: 600px;
+      }
     }
+  }
+}
+.footer .container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 
