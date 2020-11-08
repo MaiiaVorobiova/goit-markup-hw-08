@@ -360,7 +360,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .logo-menu-wrap {
     border-bottom: 1px solid #ececec;
   }
@@ -543,6 +543,24 @@ img {
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-discription-list {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-discription-list {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-discription-list {
+    width: 370px;
+  }
 }
 
 .portfolio-discription-list:not(:nth-last-child(-n + 3)) {

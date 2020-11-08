@@ -212,7 +212,7 @@
   }
 }
 .logo-menu-wrap {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     border-bottom: 1px solid #ececec;
   }
 }
