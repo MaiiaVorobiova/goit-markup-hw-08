@@ -40,11 +40,12 @@
   }
 }
 .logo-menu-wrap {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // @media screen and (min-width: 480px) {
+
+  // }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
@@ -86,30 +87,27 @@
 .current {
   position: relative;
   color: $accent-color;
-  @media screen and (min-width: 480px) {
-    padding-bottom: 12px;
-  }
+
+  padding-bottom: 12px;
+
   @media screen and (min-width: 768px) {
     padding-bottom: 30px;
   }
 
   &::after {
-    @media screen and (min-width: 480px) {
-      position: absolute;
-      left: 50%;
-      bottom: 0px;
-      display: inline-block;
-      width: 61px;
-      height: 4px;
-      content: '';
-      background-color: $accent-color;
-      border-radius: 2px;
-      transform: translateX(-50%);
-    }
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    display: inline-block;
+    width: 61px;
+    height: 4px;
+    content: '';
+    background-color: $accent-color;
+    border-radius: 2px;
+    transform: translateX(-50%);
 
     @media screen and (min-width: 768px) {
       width: 100%;
-
       bottom: -1px;
 
       @media screen and (min-width: 1200px) {
@@ -121,83 +119,76 @@
 }
 
 .email-link {
-  @media screen and (min-width: 480px) {
-    font-weight: 500;
-    font-size: 21px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: $discription-text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
     line-height: 1.166;
-    letter-spacing: 0.02em;
-    color: $discription-text-color;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.333;
+    margin-right: 22px;
+  }
+
+  &-svg {
+    fill: $discription-text-color;
+    margin-right: 10px;
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
-      font-size: 12px;
-      line-height: 1.166;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 1.333;
-      margin-right: 22px;
-    }
-
-    &-svg {
-      fill: $discription-text-color;
-      margin-right: 10px;
-      transition-property: all;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      @media screen and (min-width: 768px) {
-        width: 10px;
-        height: 14px;
-        margin-right: 8px;
-      }
+      width: 10px;
+      height: 14px;
+      margin-right: 8px;
     }
   }
 }
 
 .email-link:hover .email-link-svg {
-  @media screen and (min-width: 480px) {
-    fill: $accent-color;
-  }
+  fill: $accent-color;
 }
 
 .tel-link {
-  @media screen and (min-width: 480px) {
-    font-weight: 500;
-    font-size: 21px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: $discription-text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
     line-height: 1.166;
-    letter-spacing: 0.02em;
-    color: $discription-text-color;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.333;
+  }
+
+  &-svg {
+    fill: $discription-text-color;
+    margin-right: 10px;
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
-      font-size: 12px;
-      line-height: 1.166;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 1.333;
-    }
-
-    &-svg {
-      fill: $discription-text-color;
-      margin-right: 10px;
-      transition-property: all;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      @media screen and (min-width: 768px) {
-        width: 10px;
-        height: 14px;
-        margin-right: 8px;
-      }
+      width: 10px;
+      height: 14px;
+      margin-right: 8px;
     }
   }
 }
 .tel-link:hover .tel-link-svg {
-  @media screen and (min-width: 480px) {
-    fill: $accent-color;
-  }
+  fill: $accent-color;
 }
 
 .header {
@@ -212,9 +203,7 @@
   }
 }
 .logo-menu-wrap {
-  @media screen and (min-width: 480px) {
-    border-bottom: 1px solid #ececec;
-  }
+  border-bottom: 1px solid #ececec;
 }
 
 .menu-container {
@@ -275,14 +264,13 @@
   }
   &-list {
     &-link {
-      @media screen and (min-width: 480px) {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.166;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: $primary-text-color;
-      }
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.166;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: $primary-text-color;
+
       @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.142;
@@ -314,14 +302,3 @@
     }
   }
 }
-
-// &-item {
-//   @media screen and (min-width: 480px) {
-//     margin-bottom: 16px;
-//   }
-// }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 22px;
-//   }
-// }

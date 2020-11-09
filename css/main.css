@@ -161,12 +161,10 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .logo-menu-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.logo-menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -214,12 +212,7 @@ img {
 .current {
   position: relative;
   color: #2196f3;
-}
-
-@media screen and (min-width: 480px) {
-  .current {
-    padding-bottom: 12px;
-  }
+  padding-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -228,19 +221,17 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .current::after {
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    display: inline-block;
-    width: 61px;
-    height: 4px;
-    content: '';
-    background-color: #2196f3;
-    border-radius: 2px;
-    transform: translateX(-50%);
-  }
+.current::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  display: inline-block;
+  width: 61px;
+  height: 4px;
+  content: '';
+  background-color: #2196f3;
+  border-radius: 2px;
+  transform: translateX(-50%);
 }
 
 @media screen and (min-width: 768px) {
@@ -257,27 +248,25 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .email-link {
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 1.166;
-    letter-spacing: 0.02em;
-    color: #757575;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.email-link {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .email-link {
     font-size: 12px;
     line-height: 1.166;
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .email-link {
     font-size: 14px;
     line-height: 1.333;
@@ -285,17 +274,15 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .email-link-svg {
-    fill: #757575;
-    margin-right: 10px;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.email-link-svg {
+  fill: #757575;
+  margin-right: 10px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .email-link-svg {
     width: 10px;
     height: 14px;
@@ -303,50 +290,44 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .email-link:hover .email-link-svg {
-    fill: #2196f3;
-  }
+.email-link:hover .email-link-svg {
+  fill: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .tel-link {
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 1.166;
-    letter-spacing: 0.02em;
-    color: #757575;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.tel-link {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .tel-link {
     font-size: 12px;
     line-height: 1.166;
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .tel-link {
     font-size: 14px;
     line-height: 1.333;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .tel-link-svg {
-    fill: #757575;
-    margin-right: 10px;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.tel-link-svg {
+  fill: #757575;
+  margin-right: 10px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .tel-link-svg {
     width: 10px;
     height: 14px;
@@ -354,10 +335,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .tel-link:hover .tel-link-svg {
-    fill: #2196f3;
-  }
+.tel-link:hover .tel-link-svg {
+  fill: #2196f3;
 }
 
 .header {
@@ -372,10 +351,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .logo-menu-wrap {
-    border-bottom: 1px solid #ececec;
-  }
+.logo-menu-wrap {
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -447,15 +424,13 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .navigation-list-link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.166;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #212121;
-  }
+.navigation-list-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 @media screen and (min-width: 768px) {
@@ -761,7 +736,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .team-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -806,6 +780,7 @@ img {
 }
 
 .team-img {
+  max-width: 100%;
   margin-bottom: 30px;
 }
 
@@ -918,17 +893,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-  .footer-adress-wrap {
-    margin-bottom: 60px;
-  }
+.footer-adress-wrap {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-adress-wrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -940,10 +912,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer-container {
-    margin-bottom: 60px;
-  }
+.footer-container {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -955,7 +925,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-container {
     margin-right: 70px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -1058,17 +1028,20 @@ img {
   color: #ffffff;
 }
 
+.footer-input {
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 @media screen and (min-width: 480px) {
   .footer-input {
     width: 450px;
-    height: 50px;
-    padding-left: 16px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    border-radius: 4px;
-    background-color: #212121;
-    color: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -1079,32 +1052,32 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer-submit-btn {
-    width: 200px;
-    height: 50px;
-    font-size: 16px;
-    line-height: 1.875;
-    margin-left: 12px;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    background-color: #2196f3;
-  }
-  .footer-submit-btn:hover {
-    background-color: #2196f3;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-  }
-  .footer-submit-btn-svg {
-    width: 24px;
-    height: 24px;
-  }
+.footer-submit-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.875;
+  margin-left: 12px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2196f3;
+}
+
+.footer-submit-btn:hover {
+  background-color: #2196f3;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.footer-submit-btn-svg {
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (min-width: 768px) {

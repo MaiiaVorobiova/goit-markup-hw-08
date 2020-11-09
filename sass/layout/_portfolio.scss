@@ -26,9 +26,7 @@
     margin-right: 8px;
   }
   &-item:nth-last-child(-n + 3) {
-    @media screen and (min-width: 480px) {
-      margin-bottom: 15px;
-    }
+    margin-bottom: 15px;
   }
 }
 
@@ -83,11 +81,10 @@
 }
 
 .portfolio-item {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    margin: -15px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: -15px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -106,12 +103,14 @@
 
 .discription-name {
   margin-bottom: 4px;
-  width: 322px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  @media screen and (min-width: 480px) {
+    width: 322px;
+  }
 }
 
 .discription-direction {
