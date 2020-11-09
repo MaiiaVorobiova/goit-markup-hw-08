@@ -26,39 +26,29 @@ img {
   display: block;
 }
 
-@media screen and (min-width: 480px) {
-  .navigation-list-link:hover,
-  .navigation-list-link:focus {
-    color: #2196f3;
-  }
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .email-link:hover,
-  .email-link:focus {
-    color: #2196f3;
-  }
+.email-link:hover,
+.email-link:focus {
+  color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .tel-link:hover,
-  .tel-link:focus {
-    color: #2196f3;
-  }
+.tel-link:hover,
+.tel-link:focus {
+  color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-email-link:hover,
-  .footer-email-link:focus {
-    color: #2196f3;
-  }
+.footer-email-link:hover,
+.footer-email-link:focus {
+  color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-tel-link:hover,
-  .footer-tel-link:focus {
-    color: #2196f3;
-  }
+.footer-tel-link:hover,
+.footer-tel-link:focus {
+  color: #2196f3;
 }
 
 .visually-hidden {
@@ -351,16 +341,12 @@ img {
   }
 }
 
-.logo-menu-wrap {
-  border-bottom: 1px solid #ececec;
-}
-
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
     text-align: center;
-    top: 100%;
+    top: 101%;
     left: 0;
     width: 100%;
     padding-top: 60px;
