@@ -116,7 +116,7 @@
 
 .email-link {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.166;
   letter-spacing: 0.02em;
   color: $discription-text-color;
@@ -135,14 +135,16 @@
   }
 
   &-svg {
+    width: 16px;
+    height: 11px;
     fill: $discription-text-color;
     margin-right: 10px;
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
-      width: 10px;
-      height: 14px;
+      width: 14px;
+      height: 10px;
       margin-right: 8px;
     }
   }
@@ -154,7 +156,7 @@
 
 .tel-link {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.166;
   letter-spacing: 0.02em;
   color: $discription-text-color;
@@ -171,14 +173,14 @@
   }
 
   &-svg {
+    width: 10px;
+    height: 14px;
     fill: $discription-text-color;
     margin-right: 10px;
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
-      width: 10px;
-      height: 14px;
       margin-right: 8px;
     }
   }
