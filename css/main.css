@@ -1128,12 +1128,15 @@ img {
 }
 
 .clients-list-item {
-  width: calc((100% -2 * 30px) / 2);
+  width: calc((100% - 2 * 30px) / 2);
+}
+
+.clients-list-item {
+  margin: 15px;
 }
 
 @media screen and (min-width: 480px) {
   .clients-list-item {
-    margin: 15px;
     width: 210px;
   }
 }
