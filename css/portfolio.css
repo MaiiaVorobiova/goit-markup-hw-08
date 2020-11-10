@@ -422,6 +422,10 @@ img {
   }
 }
 
+.address-list {
+  font-size: 18px;
+}
+
 @media screen and (min-width: 768px) {
   .address-list {
     display: block;
